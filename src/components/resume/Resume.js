@@ -15,11 +15,11 @@ const Resume = () => {
         id="resume"
         className="w-full py-20 border-b-[1px] border-b-black"
       >
-        <div className="flex justify-center items-center text-center">
+        <div className="flex justify-center items-center md:mt-0 mt-[-40px] text-center">
           <Title title="1+ YEARS OF EXPERIENCE" des="My Resume" />
         </div>
         <div>
-          <ul className="w-full flex h-20 gap-x-12 bg-[#1b1b1b] rounded justify-center">
+          <ul className="w-full flex h-20 gap-3 md:gap-x-12 bg-[#1b1b1b] rounded justify-center">
             <li
               className=" mt-4 text-red-50"
               onClick={() =>
@@ -28,7 +28,7 @@ const Resume = () => {
                 setExperienceData(true)
               }
             >
-              <button className="h-12 w-28 rounded-md bg-red-500  hover:bg-slate-400">
+              <button className="h-12 w-24 md:w-28 rounded-md bg-red-500  hover:bg-slate-400">
                 Expreance
               </button>
             </li>
@@ -40,7 +40,7 @@ const Resume = () => {
                 setExperienceData(false)
               }
             >
-              <button className="h-12 w-28 rounded-md bg-red-500  hover:bg-slate-400">
+              <button className="h-12 w-24 md:w-28 rounded-md bg-red-500  hover:bg-slate-400">
                 Professional Skills
               </button>
             </li>
@@ -52,7 +52,7 @@ const Resume = () => {
                 setExperienceData(false)
               }
             >
-              <button className="h-12 w-28 rounded-md bg-red-500 hover:bg-slate-400">
+              <button className="h-12 w-24 md:w-28 rounded-md bg-red-500 hover:bg-slate-400">
                 Education
               </button>
             </li>

@@ -29,9 +29,9 @@ const Contact = () => {
     }
   };
   return (
-    <div className="flex justify-between bg-[#454546]">
-      <div className="p-8">
-        <h1 className="fon-bold font-Poppins text-[32px] text-[#fff]">
+    <div className="md:flex justify-between bg-[#454546]">
+      <div className="p-8 mt-5">
+        <h1 className="md:fon-bold font-semibold font-Poppins text-xl md:text-[32px] text-[#fff]">
           Leave Us Your Info
         </h1>
         {errmsg && (
@@ -39,72 +39,86 @@ const Contact = () => {
             {errmsg}
           </p>
         )}
+
         <div className="mt-4">
           <input
             onChange={(e) => setFirstname(e.target.value)}
             value={firstname}
             type="text"
             placeholder="Enter Your Full Name"
-            className="px-2 py-2 mt-4 w-[40%] border border-solid border-[#a3e832] outline-none rounded-lg"
+            className="px-2 py-2 mt-4 w-full border border-solid border-[#a3e832] outline-none rounded-lg"
           />
-
+          <br />
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="email"
             placeholder="Enter Your Email Or Phone Number"
-            className="px-2 py-2  mt-4  w-[40%] border  border-solid border-[#a3e832] outline-none rounded-lg"
+            className="px-2 py-2  mt-4  w-full border  border-solid border-[#a3e832] outline-none rounded-lg"
           />
+          <br />
 
           <input
             onChange={(e) => setPhone(e.target.value)}
             value={phone}
             type="number"
             placeholder="Enter Your Phone Number"
-            className="px-2 py-2  mt-4  w-[40%] border  border-solid border-[#a3e832] outline-none rounded-lg"
+            className="px-2 py-2  mt-4  w-full border  border-solid border-[#a3e832] outline-none rounded-lg"
           />
+          <br />
 
           <input
+            onChange={(e) => setSubject(e.target.value)}
+            value={subject}
+            type="text"
             placeholder="Enter Your Subject"
-            className="px-2 py-2 mt-4 w-[40%] border  border-solid border-[#a3e832] outline-none rounded-lg"
+            className="px-2 py-2 mt-4 w-full border  border-solid border-[#a3e832] outline-none rounded-lg"
           />
+          <br />
 
           <input
+            onChange={(e) => setDes(e.target.value)}
+            value={des}
+            type="text"
             placeholder="Enter Your Describtion"
-            className="px-2 py-2 mt-4 w-[40%] border border-solid border-[#a3e832] outline-none rounded-lg"
+            className="px-2 py-2 h-[80px] mt-4 w-full border border-solid border-[#a3e832] outline-none rounded-lg"
           />
+          <br />
           <button
             onClick={handleSend}
-            className="bg-[#c1f433] w-[20%] h-8 rounded-xl mt-4"
+            className="bg-[#c1f433] w-[30%] h-8 rounded-xl mt-4"
           >
-            <h1 className=" font-Poppins font-bold text-sm text-[#b1adad]">
+            <h1 className=" font-Poppins font-bold text-sm text-[#383636]">
               Send
             </h1>
           </button>
         </div>
       </div>
-      <div className="p-8 mt-20">
-        <p className=" font-Poppins font-semibold text-[32px] text-[#fff]">
+      <div className="p-8  md:mt-20">
+        <h1 className="font-Poppins font-bold text-3xl md:text-[36px] text-[#414af0]">
+          Contact Info:
+        </h1>
+        <p className=" font-Poppins font-semibold text-lg md:text-[32px] text-[#fff]">
           Support services:{" "}
-          <span className=" font-normal font-Poppins text-xl ">
+          <span className=" font-normal font-Poppins text-sm md:text-xl ">
             +8801709293799{" "}
           </span>
         </p>
-        <p className=" font-Poppins font-semibold text-[32px] text-[#fff]">
+        <p className=" font-Poppins font-semibold text-lg md:text-[32px] text-[#fff]">
           Personal:{" "}
-          <span className=" font-normal font-Poppins text-xl ">
+          <span className=" font-normal font-Poppins text-sm md:text-xl ">
             +8801709293799{" "}
           </span>
         </p>
-        <p className=" font-Poppins font-semibold text-[32px] text-[#fff]">
+        <p className=" font-Poppins font-semibold text-lg md:text-[32px] text-[#fff]">
           Email:{" "}
-          <span className=" font-normal font-Poppins text-xl ">
+          <span className=" font-normal font-Poppins text-sm md:text-xl ">
             robiulislam99981@gmail.com{" "}
           </span>
         </p>
-        <p className=" font-Poppins font-semibold text-[32px] text-[#fff]">
+        <p className=" font-Poppins font-semibold text-lg md:text-[32px] text-[#fff]">
           Website:{" "}
-          <span className=" font-normal font-Poppins text-xl ">
+          <span className=" font-normal font-Poppins text-sm md:text-xl ">
             www.robiulislam.com{" "}
           </span>
         </p>
